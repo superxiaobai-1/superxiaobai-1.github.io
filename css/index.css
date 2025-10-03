@@ -5990,9 +5990,6 @@ body[data-type='about'] #web_bg {
     flex-direction: column;
     padding-top: 10px;
   }
-  .layout .aside-content {
-    display: block !important;
-  }
 }
 @media screen and (max-width: 768px) {
   .layout {
@@ -9196,11 +9193,6 @@ h1.page-title + .tag-cloud-list {
   margin-top: 20px;
   padding: 20px 24px;
 }
-@media screen and (max-width: 768px) {
-  #aside-content .card-widget {
-    display: block;
-  }
-}
 #aside-content .card-widget .author-info__bottom-group {
   display: -webkit-box;
   display: -moz-box;
@@ -9872,7 +9864,7 @@ h1.page-title + .tag-cloud-list {
 @media screen and (max-width: 1200px) {
   .aside-content {
     max-width: none !important;
-    display: block;
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -15632,16 +15624,6 @@ blockquote {
   transition: all 0.5s ease 0s;
   padding-top: 30px;
   border-left: var(--style-border-always);
-}
-@media screen and (max-width: 768px) {
-  #sidebar #sidebar-menus.auto-open {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    right: 0;
-  }
 }
 #sidebar #sidebar-menus .sidebar-menu-item a.menu-child span {
   margin-left: 10px;
