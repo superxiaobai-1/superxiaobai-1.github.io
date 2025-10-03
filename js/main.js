@@ -159,6 +159,22 @@ var themeColorMeta, pageHeaderEl, navMusicEl, consoleEl;
 document.addEventListener("DOMContentLoaded", function () {
   let headerContentWidth, $nav, $rightMenu;
   let mobileSidebarOpen = false;
+  
+  // 检查是否启用移动端sidebar默认打开
+  const checkSidebarAutoOpen = () => {
+    if (window.innerWidth <= 768 && typeof GLOBAL_CONFIG !== 'undefined' && GLOBAL_CONFIG.sidebar && GLOBAL_CONFIG.sidebar.auto_open) {
+      setTimeout(() => {
+        const sidebarMenus = document.getElementById("sidebar-menus");
+        if (sidebarMenus) {
+          sidebarMenus.classList.add("auto-open");
+          sidebarMenus.classList.add("open");
+          mobileSidebarOpen = true;
+          anzhiyu.sidebarPaddingR();
+          anzhiyu.animateIn(document.getElementById("menu-mask"), "to_show 0.5s");
+        }
+      }, 100);
+    }
+  };
 
   const adjustMenu = init => {
     const getAllWidth = ele => {
@@ -1777,6 +1793,9 @@ document.addEventListener("DOMContentLoaded", function () {
     coverColor();
     listenToPageInputPress();
     openMobileMenu();
+    
+    // 检查移动端sidebar是否需要默认打开
+    checkSidebarAutoOpen();
 
     // needRefresh
     // nav中间的标题变化
