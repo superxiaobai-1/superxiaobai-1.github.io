@@ -60,7 +60,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-10-05 07:22:34',
+  postUpdate: '2025-10-05 08:14:00',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -279,6 +279,154 @@
     }
   }
   
+  /* Banner图片优化 - 防止截断 */
+  .home_top_banner img,
+  .banner img,
+  .home_top .banner img,
+  .home_top_banner .banner img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-height: 400px !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  /* 首页顶部banner容器优化 */
+  .home_top_banner,
+  .banner,
+  .home_top .banner,
+  .home_top_banner .banner {
+    overflow: visible !important;
+    display: block !important;
+    text-align: center !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    min-height: 300px !important;
+    padding: 20px !important;
+  }
+  
+  /* 针对robot.png的特殊优化 - 居中显示 */
+  img[src*="robot.png"] {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 350px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  
+  /* Banner容器确保图片完全居中 */
+  .home_top_banner,
+  .banner,
+  .home_top .banner,
+  .home_top_banner .banner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  
+  /* 确保robot.png在banner中完美居中 */
+  .home_top_banner > img,
+  .banner > img,
+  .home_top .banner > img,
+  .home_top_banner .banner > img {
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 1 !important;
+  }
+  
+  /* 文章封面图片居中显示 */
+  .post_cover img,
+  .post-top-img img,
+  .cover img,
+  .post-cover img {
+    display: block !important;
+    margin: 0 auto !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    text-align: center !important;
+  }
+  
+  /* 文章封面容器居中 */
+  .post_cover,
+  .post-top-img,
+  .cover,
+  .post-cover {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+  }
+  
+  /* 只针对autonomous-driving-robot-development-roadmap文章封面居中 */
+  .post-cover img[src*="robot.png"],
+  .post-top-img img[src*="robot.png"],
+  .cover img[src*="robot.png"],
+  .post_cover img[src*="robot.png"],
+  /* 针对特定文章路径 */
+  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .post-cover img,
+  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .post-top-img img,
+  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .cover img {
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 400px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  /* 针对特定文章的容器居中 */
+  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .post-cover,
+  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .post-top-img,
+  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .cover {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+  }
+  
+  /* 响应式banner优化 */
+  @media (max-width: 768px) {
+    .home_top_banner img,
+    .banner img,
+    .home_top .banner img,
+    .home_top_banner .banner img,
+    img[src*="robot.png"] {
+      max-height: 250px !important;
+    }
+    .home_top_banner,
+    .banner,
+    .home_top .banner,
+    .home_top_banner .banner {
+      min-height: 200px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home_top_banner img,
+    .banner img,
+    .home_top .banner img,
+    .home_top_banner .banner img,
+    img[src*="robot.png"] {
+      max-height: 200px !important;
+    }
+    .home_top_banner,
+    .banner,
+    .home_top .banner,
+    .home_top_banner .banner {
+      min-height: 150px !important;
+    }
+  }
+  
   /* 脉冲动画 */
   @keyframes pulse {
     0%, 100% { 
@@ -372,8 +520,23 @@
         <span class="tagsPageCount">2</span>
       </a>
     
+      <a href="/tags/Apollo/" id="/tags/Apollo/">
+        <span class="tags-punctuation">#</span>Apollo
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/Cyber-RT/" id="/tags/Cyber-RT/">
+        <span class="tags-punctuation">#</span>Cyber RT
+        <span class="tagsPageCount">1</span>
+      </a>
+    
       <a href="/tags/技术路线/" id="/tags/技术路线/">
         <span class="tags-punctuation">#</span>技术路线
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/分布式通信/" id="/tags/分布式通信/">
+        <span class="tags-punctuation">#</span>分布式通信
         <span class="tagsPageCount">1</span>
       </a>
     
@@ -394,36 +557,6 @@
     
       <a href="/tags/RAII/" id="/tags/RAII/">
         <span class="tags-punctuation">#</span>RAII
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/Apollo/" id="/tags/Apollo/">
-        <span class="tags-punctuation">#</span>Apollo
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/Cyber-RT/" id="/tags/Cyber-RT/">
-        <span class="tags-punctuation">#</span>Cyber RT
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/分布式通信/" id="/tags/分布式通信/">
-        <span class="tags-punctuation">#</span>分布式通信
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/性能调优/" id="/tags/性能调优/">
-        <span class="tags-punctuation">#</span>性能调优
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/QoS配置/" id="/tags/QoS配置/">
-        <span class="tags-punctuation">#</span>QoS配置
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/传输优化/" id="/tags/传输优化/">
-        <span class="tags-punctuation">#</span>传输优化
         <span class="tagsPageCount">1</span>
       </a>
     
@@ -454,6 +587,21 @@
     
       <a href="/tags/多进程/" id="/tags/多进程/">
         <span class="tags-punctuation">#</span>多进程
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/性能调优/" id="/tags/性能调优/">
+        <span class="tags-punctuation">#</span>性能调优
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/QoS配置/" id="/tags/QoS配置/">
+        <span class="tags-punctuation">#</span>QoS配置
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/传输优化/" id="/tags/传输优化/">
+        <span class="tags-punctuation">#</span>传输优化
         <span class="tagsPageCount">1</span>
       </a>
     
