@@ -60,7 +60,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-10-06 23:10:30',
+  postUpdate: '2025-10-11 06:16:57',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -279,154 +279,6 @@
     }
   }
   
-  /* Banner图片优化 - 防止截断 */
-  .home_top_banner img,
-  .banner img,
-  .home_top .banner img,
-  .home_top_banner .banner img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-    max-height: 400px !important;
-    object-position: center !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
-  
-  /* 首页顶部banner容器优化 */
-  .home_top_banner,
-  .banner,
-  .home_top .banner,
-  .home_top_banner .banner {
-    overflow: visible !important;
-    display: block !important;
-    text-align: center !important;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    min-height: 300px !important;
-    padding: 20px !important;
-  }
-  
-  /* 针对robot.png的特殊优化 - 居中显示 */
-  img[src*="robot.png"] {
-    width: auto !important;
-    height: auto !important;
-    max-width: 100% !important;
-    max-height: 350px !important;
-    object-fit: contain !important;
-    object-position: center !important;
-    display: block !important;
-    margin: 0 auto !important;
-    text-align: center !important;
-  }
-  
-  /* Banner容器确保图片完全居中 */
-  .home_top_banner,
-  .banner,
-  .home_top .banner,
-  .home_top_banner .banner {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-direction: column !important;
-  }
-  
-  /* 确保robot.png在banner中完美居中 */
-  .home_top_banner > img,
-  .banner > img,
-  .home_top .banner > img,
-  .home_top_banner .banner > img {
-    position: relative !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    z-index: 1 !important;
-  }
-  
-  /* 文章封面图片居中显示 */
-  .post_cover img,
-  .post-top-img img,
-  .cover img,
-  .post-cover img {
-    display: block !important;
-    margin: 0 auto !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    text-align: center !important;
-  }
-  
-  /* 文章封面容器居中 */
-  .post_cover,
-  .post-top-img,
-  .cover,
-  .post-cover {
-    text-align: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    overflow: hidden !important;
-  }
-  
-  /* 只针对autonomous-driving-robot-development-roadmap文章封面居中 */
-  .post-cover img[src*="robot.png"],
-  .post-top-img img[src*="robot.png"],
-  .cover img[src*="robot.png"],
-  .post_cover img[src*="robot.png"],
-  /* 针对特定文章路径 */
-  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .post-cover img,
-  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .post-top-img img,
-  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .cover img {
-    max-width: 100% !important;
-    height: auto !important;
-    max-height: 400px !important;
-    object-fit: contain !important;
-    object-position: center !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
-  
-  /* 针对特定文章的容器居中 */
-  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .post-cover,
-  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .post-top-img,
-  body:has(.post-title:contains("自动驾驶/机器人开发技术路线")) .cover {
-    text-align: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    overflow: hidden !important;
-  }
-  
-  /* 响应式banner优化 */
-  @media (max-width: 768px) {
-    .home_top_banner img,
-    .banner img,
-    .home_top .banner img,
-    .home_top_banner .banner img,
-    img[src*="robot.png"] {
-      max-height: 250px !important;
-    }
-    .home_top_banner,
-    .banner,
-    .home_top .banner,
-    .home_top_banner .banner {
-      min-height: 200px !important;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .home_top_banner img,
-    .banner img,
-    .home_top .banner img,
-    .home_top_banner .banner img,
-    img[src*="robot.png"] {
-      max-height: 200px !important;
-    }
-    .home_top_banner,
-    .banner,
-    .home_top .banner,
-    .home_top_banner .banner {
-      min-height: 150px !important;
-    }
-  }
-  
   /* 脉冲动画 */
   @keyframes pulse {
     0%, 100% { 
@@ -439,14 +291,14 @@
     }
   }
 </style>
-<meta name="generator" content="Hexo 7.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">大白的编程小屋</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 机器人</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/img/404.png"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 文档说明</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/downloads/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> OTA</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Apollo/" style="font-size: 1.05rem;">Apollo<sup>1</sup></a><a href="/tags/C/" style="font-size: 1.05rem;">C++<sup>2</sup></a><a href="/tags/Cyber-RT/" style="font-size: 1.05rem;">Cyber RT<sup>1</sup></a><a href="/tags/DDS/" style="font-size: 1.05rem;">DDS<sup>3</sup></a><a href="/tags/FastDDS/" style="font-size: 1.05rem;">FastDDS<sup>2</sup></a><a href="/tags/IPC/" style="font-size: 1.05rem;">IPC<sup>1</sup></a><a href="/tags/Linux/" style="font-size: 1.05rem;">Linux<sup>1</sup></a><a href="/tags/QoS%E9%85%8D%E7%BD%AE/" style="font-size: 1.05rem;">QoS配置<sup>1</sup></a><a href="/tags/RAII/" style="font-size: 1.05rem;">RAII<sup>1</sup></a><a href="/tags/ROS/" style="font-size: 1.05rem;">ROS<sup>2</sup></a><a href="/tags/ROS1/" style="font-size: 1.05rem;">ROS1<sup>3</sup></a><a href="/tags/ROS2/" style="font-size: 1.05rem;">ROS2<sup>3</sup></a><a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" style="font-size: 1.05rem;">中间件<sup>2</sup></a><a href="/tags/%E4%BC%A0%E8%BE%93%E4%BC%98%E5%8C%96/" style="font-size: 1.05rem;">传输优化<sup>1</sup></a><a href="/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">内存管理<sup>1</sup></a><a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/" style="font-size: 1.05rem;">分布式系统<sup>4</sup></a><a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%80%9A%E4%BF%A1/" style="font-size: 1.05rem;">分布式通信<sup>1</sup></a><a href="/tags/%E5%90%9E%E5%90%90%E9%87%8F/" style="font-size: 1.05rem;">吞吐量<sup>2</sup></a><a href="/tags/%E5%A4%9A%E8%BF%9B%E7%A8%8B/" style="font-size: 1.05rem;">多进程<sup>1</sup></a><a href="/tags/%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1/" style="font-size: 1.05rem;">实时通信<sup>3</sup></a><a href="/tags/%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 1.05rem;">序列化<sup>1</sup></a><a href="/tags/%E5%BB%B6%E8%BF%9F%E4%BC%98%E5%8C%96/" style="font-size: 1.05rem;">延迟优化<sup>2</sup></a><a href="/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/" style="font-size: 1.05rem;">性能调优<sup>1</sup></a><a href="/tags/%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/" style="font-size: 1.05rem;">技术路线<sup>1</sup></a><a href="/tags/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/" style="font-size: 1.05rem;">数据传输<sup>1</sup></a><a href="/tags/%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/" style="font-size: 1.05rem;">智能指针<sup>1</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/" style="font-size: 1.05rem;">服务调用<sup>1</sup></a><a href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/" style="font-size: 1.05rem;">机器人<sup>2</sup></a><a href="/tags/%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/" style="font-size: 1.05rem;">消息传递<sup>2</sup></a><a href="/tags/%E6%B6%88%E6%81%AF%E5%AE%9A%E4%B9%89/" style="font-size: 1.05rem;">消息定义<sup>1</sup></a><a href="/tags/%E6%B6%88%E6%81%AF%E7%B1%BB%E5%9E%8B/" style="font-size: 1.05rem;">消息类型<sup>1</sup></a><a href="/tags/%E6%B6%88%E6%81%AF%E7%B3%BB%E7%BB%9F/" style="font-size: 1.05rem;">消息系统<sup>1</sup></a><a href="/tags/%E7%8E%B0%E4%BB%A3C/" style="font-size: 1.05rem;">现代C++<sup>1</sup></a><a href="/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/" style="font-size: 1.05rem;">系统编程<sup>1</sup></a><a href="/tags/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/" style="font-size: 1.05rem;">自动驾驶<sup>3</sup></a><a href="/tags/%E8%8A%82%E7%82%B9%E9%80%9A%E4%BF%A1/" style="font-size: 1.05rem;">节点通信<sup>2</sup></a><a href="/tags/%E8%AF%9D%E9%A2%98%E6%9C%BA%E5%88%B6/" style="font-size: 1.05rem;">话题机制<sup>1</sup></a><a href="/tags/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">进程管理<sup>1</sup></a><a href="/tags/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/" style="font-size: 1.05rem;">进程间通信<sup>1</sup></a><a href="/tags/%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84/" style="font-size: 1.05rem;">通信架构<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">January 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">11</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="tag"><div id="tag-page-tags">
+<meta name="generator" content="Hexo 7.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">大白的编程小屋</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 机器人</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/img/404.png"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 文档说明</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/downloads/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> OTA</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Apollo/" style="font-size: 1.05rem;">Apollo<sup>1</sup></a><a href="/tags/C/" style="font-size: 1.05rem;">C++<sup>2</sup></a><a href="/tags/Cyber-RT/" style="font-size: 1.05rem;">Cyber RT<sup>1</sup></a><a href="/tags/DDS/" style="font-size: 1.05rem;">DDS<sup>3</sup></a><a href="/tags/FastDDS/" style="font-size: 1.05rem;">FastDDS<sup>2</sup></a><a href="/tags/IPC/" style="font-size: 1.05rem;">IPC<sup>1</sup></a><a href="/tags/Linux/" style="font-size: 1.05rem;">Linux<sup>1</sup></a><a href="/tags/QoS%E9%85%8D%E7%BD%AE/" style="font-size: 1.05rem;">QoS配置<sup>1</sup></a><a href="/tags/RAII/" style="font-size: 1.05rem;">RAII<sup>1</sup></a><a href="/tags/ROS/" style="font-size: 1.05rem;">ROS<sup>2</sup></a><a href="/tags/ROS1/" style="font-size: 1.05rem;">ROS1<sup>3</sup></a><a href="/tags/ROS2/" style="font-size: 1.05rem;">ROS2<sup>3</sup></a><a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" style="font-size: 1.05rem;">中间件<sup>2</sup></a><a href="/tags/%E4%BC%A0%E8%BE%93%E4%BC%98%E5%8C%96/" style="font-size: 1.05rem;">传输优化<sup>1</sup></a><a href="/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">内存管理<sup>1</sup></a><a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/" style="font-size: 1.05rem;">分布式系统<sup>4</sup></a><a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%80%9A%E4%BF%A1/" style="font-size: 1.05rem;">分布式通信<sup>1</sup></a><a href="/tags/%E5%90%9E%E5%90%90%E9%87%8F/" style="font-size: 1.05rem;">吞吐量<sup>2</sup></a><a href="/tags/%E5%A4%9A%E8%BF%9B%E7%A8%8B/" style="font-size: 1.05rem;">多进程<sup>1</sup></a><a href="/tags/%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1/" style="font-size: 1.05rem;">实时通信<sup>3</sup></a><a href="/tags/%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 1.05rem;">序列化<sup>1</sup></a><a href="/tags/%E5%BB%B6%E8%BF%9F%E4%BC%98%E5%8C%96/" style="font-size: 1.05rem;">延迟优化<sup>2</sup></a><a href="/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/" style="font-size: 1.05rem;">性能调优<sup>1</sup></a><a href="/tags/%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/" style="font-size: 1.05rem;">技术路线<sup>1</sup></a><a href="/tags/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/" style="font-size: 1.05rem;">数据传输<sup>1</sup></a><a href="/tags/%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/" style="font-size: 1.05rem;">智能指针<sup>1</sup></a><a href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/" style="font-size: 1.05rem;">机器人<sup>2</sup></a><a href="/tags/%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/" style="font-size: 1.05rem;">消息传递<sup>2</sup></a><a href="/tags/%E6%B6%88%E6%81%AF%E5%AE%9A%E4%B9%89/" style="font-size: 1.05rem;">消息定义<sup>1</sup></a><a href="/tags/%E6%B6%88%E6%81%AF%E7%B1%BB%E5%9E%8B/" style="font-size: 1.05rem;">消息类型<sup>1</sup></a><a href="/tags/%E6%B6%88%E6%81%AF%E7%B3%BB%E7%BB%9F/" style="font-size: 1.05rem;">消息系统<sup>1</sup></a><a href="/tags/%E7%8E%B0%E4%BB%A3C/" style="font-size: 1.05rem;">现代C++<sup>1</sup></a><a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" style="font-size: 1.05rem;">生命周期<sup>1</sup></a><a href="/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/" style="font-size: 1.05rem;">系统编程<sup>1</sup></a><a href="/tags/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/" style="font-size: 1.05rem;">自动驾驶<sup>3</sup></a><a href="/tags/%E8%8A%82%E7%82%B9%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">节点管理<sup>1</sup></a><a href="/tags/%E8%8A%82%E7%82%B9%E9%80%9A%E4%BF%A1/" style="font-size: 1.05rem;">节点通信<sup>2</sup></a><a href="/tags/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">进程管理<sup>1</sup></a><a href="/tags/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/" style="font-size: 1.05rem;">进程间通信<sup>1</sup></a><a href="/tags/%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84/" style="font-size: 1.05rem;">通信架构<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">January 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">11</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="tag"><div id="tag-page-tags">
       <a href="/tags/分布式系统/" id="/tags/分布式系统/">
         <span class="tags-punctuation">#</span>分布式系统
         <span class="tagsPageCount">4</span>
       </a>
     
-      <a href="/tags/自动驾驶/" id="/tags/自动驾驶/">
-        <span class="tags-punctuation">#</span>自动驾驶
+      <a href="/tags/ROS2/" id="/tags/ROS2/">
+        <span class="tags-punctuation">#</span>ROS2
         <span class="tagsPageCount">3</span>
       </a>
     
@@ -455,19 +307,34 @@
         <span class="tagsPageCount">3</span>
       </a>
     
-      <a href="/tags/ROS2/" id="/tags/ROS2/">
-        <span class="tags-punctuation">#</span>ROS2
+      <a href="/tags/实时通信/" id="/tags/实时通信/">
+        <span class="tags-punctuation">#</span>实时通信
         <span class="tagsPageCount">3</span>
       </a>
     
-      <a href="/tags/实时通信/" id="/tags/实时通信/">
-        <span class="tags-punctuation">#</span>实时通信
+      <a href="/tags/自动驾驶/" id="/tags/自动驾驶/">
+        <span class="tags-punctuation">#</span>自动驾驶
         <span class="tagsPageCount">3</span>
       </a>
     
       <a href="/tags/ROS1/" id="/tags/ROS1/">
         <span class="tags-punctuation">#</span>ROS1
         <span class="tagsPageCount">3</span>
+      </a>
+    
+      <a href="/tags/中间件/" id="/tags/中间件/">
+        <span class="tags-punctuation">#</span>中间件
+        <span class="tagsPageCount">2</span>
+      </a>
+    
+      <a href="/tags/FastDDS/" id="/tags/FastDDS/">
+        <span class="tags-punctuation">#</span>FastDDS
+        <span class="tagsPageCount">2</span>
+      </a>
+    
+      <a href="/tags/C/" id="/tags/C/">
+        <span class="tags-punctuation">#</span>C++
+        <span class="tagsPageCount">2</span>
       </a>
     
       <a href="/tags/机器人/" id="/tags/机器人/">
@@ -477,21 +344,6 @@
     
       <a href="/tags/ROS/" id="/tags/ROS/">
         <span class="tags-punctuation">#</span>ROS
-        <span class="tagsPageCount">2</span>
-      </a>
-    
-      <a href="/tags/C/" id="/tags/C/">
-        <span class="tags-punctuation">#</span>C++
-        <span class="tagsPageCount">2</span>
-      </a>
-    
-      <a href="/tags/FastDDS/" id="/tags/FastDDS/">
-        <span class="tags-punctuation">#</span>FastDDS
-        <span class="tagsPageCount">2</span>
-      </a>
-    
-      <a href="/tags/中间件/" id="/tags/中间件/">
-        <span class="tags-punctuation">#</span>中间件
         <span class="tagsPageCount">2</span>
       </a>
     
@@ -520,18 +372,13 @@
         <span class="tagsPageCount">2</span>
       </a>
     
-      <a href="/tags/技术路线/" id="/tags/技术路线/">
-        <span class="tags-punctuation">#</span>技术路线
+      <a href="/tags/通信架构/" id="/tags/通信架构/">
+        <span class="tags-punctuation">#</span>通信架构
         <span class="tagsPageCount">1</span>
       </a>
     
       <a href="/tags/分布式通信/" id="/tags/分布式通信/">
         <span class="tags-punctuation">#</span>分布式通信
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/通信架构/" id="/tags/通信架构/">
-        <span class="tags-punctuation">#</span>通信架构
         <span class="tagsPageCount">1</span>
       </a>
     
@@ -552,6 +399,21 @@
     
       <a href="/tags/RAII/" id="/tags/RAII/">
         <span class="tags-punctuation">#</span>RAII
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/Apollo/" id="/tags/Apollo/">
+        <span class="tags-punctuation">#</span>Apollo
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/Cyber-RT/" id="/tags/Cyber-RT/">
+        <span class="tags-punctuation">#</span>Cyber RT
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/技术路线/" id="/tags/技术路线/">
+        <span class="tags-punctuation">#</span>技术路线
         <span class="tagsPageCount">1</span>
       </a>
     
@@ -595,16 +457,6 @@
         <span class="tagsPageCount">1</span>
       </a>
     
-      <a href="/tags/Apollo/" id="/tags/Apollo/">
-        <span class="tags-punctuation">#</span>Apollo
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/Cyber-RT/" id="/tags/Cyber-RT/">
-        <span class="tags-punctuation">#</span>Cyber RT
-        <span class="tagsPageCount">1</span>
-      </a>
-    
       <a href="/tags/Linux/" id="/tags/Linux/">
         <span class="tags-punctuation">#</span>Linux
         <span class="tagsPageCount">1</span>
@@ -635,26 +487,6 @@
         <span class="tagsPageCount">1</span>
       </a>
     
-      <a href="/tags/话题机制/" id="/tags/话题机制/">
-        <span class="tags-punctuation">#</span>话题机制
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/服务调用/" id="/tags/服务调用/">
-        <span class="tags-punctuation">#</span>服务调用
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/性能优化/" id="/tags/性能优化/">
-        <span class="tags-punctuation">#</span>性能优化
-        <span class="tagsPageCount">1</span>
-      </a>
-    
-      <a href="/tags/实时系统/" id="/tags/实时系统/">
-        <span class="tags-punctuation">#</span>实时系统
-        <span class="tagsPageCount">1</span>
-      </a>
-    
       <a href="/tags/节点管理/" id="/tags/节点管理/">
         <span class="tags-punctuation">#</span>节点管理
         <span class="tagsPageCount">1</span>
@@ -672,6 +504,26 @@
     
       <a href="/tags/进程控制/" id="/tags/进程控制/">
         <span class="tags-punctuation">#</span>进程控制
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/话题机制/" id="/tags/话题机制/">
+        <span class="tags-punctuation">#</span>话题机制
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/服务调用/" id="/tags/服务调用/">
+        <span class="tags-punctuation">#</span>服务调用
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/性能优化/" id="/tags/性能优化/">
+        <span class="tags-punctuation">#</span>性能优化
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/tags/实时系统/" id="/tags/实时系统/">
+        <span class="tags-punctuation">#</span>实时系统
         <span class="tagsPageCount">1</span>
       </a>
     </div><div class="article-sort-title">数据传输</div><div class="article-sort"><div class="article-sort-item year"><span>2025</span></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2025/01/22/1-ros1-message-system/" title="ROS1消息系统剖析 - 消息定义、序列化与传输机制"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/ros1-message-system.jpg" alt="ROS1消息系统剖析 - 消息定义、序列化与传输机制" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/2025/01/22/1-ros1-message-system/" title="ROS1消息系统剖析 - 消息定义、序列化与传输机制">ROS1消息系统剖析 - 消息定义、序列化与传输机制</a><span class="article-sort-item-index">1</span><div class="article-meta-wrap"><span class="article-sort-item-tags"><a class="article-meta__tags" href="/tags/ROS1/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>ROS1</span></a><a class="article-meta__tags" href="/tags/%E6%B6%88%E6%81%AF%E7%B3%BB%E7%BB%9F/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>消息系统</span></a><a class="article-meta__tags" href="/tags/%E5%BA%8F%E5%88%97%E5%8C%96/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>序列化</span></a><a class="article-meta__tags" href="/tags/%E6%B6%88%E6%81%AF%E5%AE%9A%E4%B9%89/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>消息定义</span></a><a class="article-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>数据传输</span></a><a class="article-meta__tags" href="/tags/%E6%B6%88%E6%81%AF%E7%B1%BB%E5%9E%8B/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>消息类型</span></a></span><div class="article-sort-item-time"><i class="anzhiyufont anzhiyu-icon-calendar-alt"></i><time class="post-meta-date-created" datetime="2025-01-23T00:20:00.000Z" title="Created 2025-01-22 16:20:00">2025-01-22</time></div></div></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2021/01/15/d7e60de1a2e5b.gif" alt="status"/></div></div><div class="author-info__description">专注于自动驾驶和机器人开发、C++编程的技术博客</div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">Sor-大白</h1><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="/courses/" target="_blank" title="课程"><i class="anzhiyufont anzhiyu-icon-lightbulb"></i></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/your-id" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="social-icon faa-parent animated-hover" href="https://v.douyin.com/your-link" target="_blank" title="抖音"><i class="anzhiyufont anzhiyu-icon-tiktok"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>Announcement</span></div><div class="announcement_content">专注于自动驾驶和机器人开发、C++编程的技术</div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(img/weixi.jpg) center center / 100% no-repeat"></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
